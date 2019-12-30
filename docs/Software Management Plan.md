@@ -10,7 +10,7 @@ Raul Farkas is responsible for developing and maintaining this document.
 
 Team 3 is interested in updating MarconiTT, a web application, used internally at I.T.I. G. Marconi to manage classroom bookings. This update includes three important changes: the addition of new features that facilitate the use of the application, the encapsulation of the web application inside a containerized environment and the displacement of the entire webserver, that contains MarconiTT and other applications, from edu-x04 to edu-x08, a more modern server.
 
-The new features that are to be implemented will allow users to book classrooms for up to 10 hours for multiple days using the same form as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
+The new features that are to be implemented will allow users to book classrooms for up to 10 hours for multiple days in consecutive weeks using the same form as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
 
 The encapsulation of MarconiTT inside a containerized environment eliminates most of the difficulties that developers encounter when updating a software on production servers, since the code will reside inside an identical virtual environment on both the development and production machines.
 
@@ -28,7 +28,7 @@ The overall objective is to add new features that increase usability and to cont
 
 ### Project Objectives
 
-1. Update the booking form so that it allows users to book the same classroom for multiple hours on multiple days of the week.
+1. Update the booking form so that it allows users to book the same classroom for multiple hours on multiple days in consecutive weeks.
 2. Update the "Gestisci prenotazioni" by adding a calendar that allows users to filter previous bookings based on the selected date.
 3. Create two containers that hold the Database and the Backend application using Docker and Docker-Compose
 4. Create a program that can be used to update the timetable on MarconiTT inside the containerized environment
