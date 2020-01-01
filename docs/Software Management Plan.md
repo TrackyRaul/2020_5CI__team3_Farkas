@@ -166,7 +166,7 @@ A working copy of MarconiTT and webserver can now be found on productions server
 
 The developers responsible with processes involving ETL can now use the MarconiTT API to save data related to the timetable and to bookings.
 
-#### 3.2.4 Forth iteration
+#### 3.2.4 Fourth iteration
 
 The software on edu-x08 is updated at its latest version. Production tests are required in order to make sure that the software is ready to be finally released.
 
