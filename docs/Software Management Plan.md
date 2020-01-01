@@ -8,13 +8,13 @@ Raul Farkas is responsible for developing and maintaining this document.
 
 ## 1.1 Purpose and scope
 
-Team 3 is interested in updating MarconiTT, a web application, used internally at I.T.I. G. Marconi to manage classroom bookings. This update includes three important changes: the addition of new features that facilitate the use of the application, the encapsulation of the web application inside a containerized environment and the displacement of the entire webserver, that contains MarconiTT and other applications, from edu-x04 to edu-x08, a more modern server.
+Team 3 is interested in updating MarconiTT, a web application used internally at I.T.I. G. Marconi to manage classroom bookings. This update includes three important changes: the addition of new features that facilitate the use of the application, the encapsulation of the web application inside a containerized environment and the displacement of the entire webserver, that contains MarconiTT and other applications, from edu-x04 to edu-x08, a more modern server.
 
-The new features that are to be implemented will allow users to book classrooms for up to 10 hours for multiple days in consecutive weeks using the same form as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
+The new features that are to be implemented will allow users to book classrooms for up to 10 hours for multiple days in consecutive weeks using the same form, as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
 
-The encapsulation of MarconiTT inside a containerized environment eliminates most of the difficulties that developers encounter when updating a software on production servers, since the code will reside inside an identical virtual environment on both the development and production machines.
+The encapsulation of MarconiTT inside a containerized environment eliminates most of the difficulties that developers encounter when updating a software on production servers, because the code will reside inside an identical virtual environment on both the development and production machines.
 
-Moving the webserver and the MarconiTT web application on edu-x08(server) is a fundamental step, since the Debian version currently installed on edu-x04 is too old and does not receive security patches anymore.    This displacement also allows for increased performances since edu-x08 is a virtual machine hosted on a more powerful server compared to the one where edu-x04 currently resides.
+Moving the webserver and the MarconiTT web application on edu-x08(server) is a fundamental step, because the Debian version currently installed on edu-x04 is too old and does not receive security patches any more. This displacement also allows for increased performances as edu-x08 is a virtual machine hosted on a more powerful server compared to the one where edu-x04 currently resides.
 
 ## 1.2 Goals and objectives
 
@@ -31,7 +31,7 @@ The overall objective is to add new features that increase usability and to cont
 1. Update the booking form so that it allows users to book the same classroom for multiple hours on multiple days in consecutive weeks.
 2. Update the "Gestisci prenotazioni" by adding a calendar that allows users to filter previous bookings based on the selected date.
 3. Create two containers that hold the Database and the Backend application using Docker and Docker-Compose
-4. Create a program that can be used to update the timetable on MarconiTT inside the containerized environment
+4. Create a script that can be used to update the timetable on MarconiTT inside the containerized environment
 5. Move the database and the backend application inside the Docker containers
 6. Move the Webserver with the containerized version MarconiTT on a new server (edu-x08)
 
@@ -53,13 +53,13 @@ The overall objective is to add new features that increase usability and to cont
 
 ### 1.4.2 Constraints
 
-1. In order to update the timetable on MarconiTT an updated version of the timetables files in .csv format need to be provided.
+1. In order to update the timetable on MarconiTT an updated version of the timetable files need to be provided.
 
 ## 1.5 Schedule
 
 ### 1.5.1 Schedule summary
 
-![](schedule_summary.PNG)
+![](.\schedule_summary.PNG)
 
 ## 1.6 Success Criteria
 
@@ -99,7 +99,7 @@ An iterative and incremental development process is planned. Feedback will be us
 * Operating System - Linux
 * Version Control - all work products will be stored in a GIT repository
 * Development Tools - Visual Studio Code
-* Frameworks and Technologies - Angular JS, Express(Node), Mysql DB, Docker, Docker-Compose
+* Frameworks and Technologies - Angular JS, Express(Node), Mysql, Docker, Docker-Compose
 
 # 3. Work Plan
 
@@ -140,7 +140,7 @@ An iterative and incremental development process is planned. Feedback will be us
 | Add ETL API                  | 2                | 2             |
 | Tweaks and bugfixes          | 15               | 18            |
 
-#### Iteration 4
+#### Iteration 4 #4 (07/01/2019 - 13/01/2019)
 
 **Summary**: Update software on production server. Check for minor bugs. Prepare for release
 
@@ -150,23 +150,21 @@ An iterative and incremental development process is planned. Feedback will be us
 | Bug fixes / testing                  | 6                |               |
 | Product release                      | 3                |               |
 
-#### 
-
 ### 3.2 Iteration plans
 
 #### 3.2.1 First iteration
 
-The backend and the Database of MarconiTT are contained inside Docker containers and work properly. In case of crashes, the containers work properly. Users can now book classrooms for multiple days with just one click. Users can also filter by date previous bookings.
+The backend and the Database of MarconiTT are contained inside Docker containers and work properly. In case of crashes, the containers restart automatically. Users can now book classrooms for multiple days with just one click. Users can also filter by date previous bookings.
 
 #### 3.2.2 Second iteration
 
-A working copy of MarconiTT and webserver can now be found on productions server edu-x08. Administrators can now upload the updated timetables as csv files inside a specific directory and the Python Updater automatically updates the MarconiTT database.
+A working copy of MarconiTT and webserver can now be found on production server(edu-x08). Administrators can upload the updated timetables as .txt files inside a specific directory and the Python Updater automatically updates the MarconiTT database.
 
 #### 3.2.3 Third iteration
 
 The developers responsible with processes involving ETL can now use the MarconiTT API to save data related to the timetable and to bookings.
 
-#### 3.2.4 Fourth iteration
+#### 3.2.4 Forth iteration
 
 The software on edu-x08 is updated at its latest version. Production tests are required in order to make sure that the software is ready to be finally released.
 
@@ -185,7 +183,7 @@ The following procedure is to be used when making changes to all baselined work 
 
 # 5. Product Acceptance Plan
 
-At the conclusion of each iteration, the product needs to be tested in an environment similar to the one used on the Production server. Because the application is encapsulated inside Docker containers testing can be easily done on any machine that supports Docker since the underlying OS is the same inside the containers.  
+At the conclusion of each iteration, the product needs to be tested in an environment similar to the one used on the Production server. Because the application is encapsulated inside Docker containers, testing can be easily done on any machine that supports Docker as the underlying OS is the same inside the containers.  
 
 
 
