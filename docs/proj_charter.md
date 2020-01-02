@@ -61,7 +61,7 @@ ___
  Scrum methodology has been involved in this project. So, an iterative and incremental approach has been adopted, with various iterations subdivided in tasks and daily team meetings to verify the task status and plan for new ones. 
 ___
 ### **Constraints**:  
-In order to update the timetable on MarconiTT an updated version of the timetable files need to be provided. 
+In order to update the timetable on MarconiTT, an updated version of the timetable files needs to be provided. 
 ___
 ### **Assumptions** 
 - A working version of MarconiTT is available and ready to be updated with new features
