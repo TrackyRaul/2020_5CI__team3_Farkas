@@ -48,7 +48,7 @@
 # 1 Introduction
 
 ## 1.1 Overview
-MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached either from inside and outside the school network. The application allows for authorized teachers, students and school staff to book classrooms and labs of the school. Team 3 is interested in updating MarconiTT, with three important changes and different minor fixes. 
+MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached either from inside and outside the school network. The application allows for authorized teachers, students and staff members to book classrooms and labs of the school. Team 3 is interested in updating MarconiTT, with three important changes and different minor fixes. 
 
 This document provides information on the requirements for MarconiTT application. Project goals, scope and definitions are given in the introduction. Design contraints and application environment are described in the following section. Non-functional requirements are outlined for later verification. Functional requirements are given to show the system features and expected user interaction.
 
@@ -75,7 +75,7 @@ The overall objective is to add new features that increase usability and to cont
 
 ## 1.3 Scope
 
-The new features that are to be implemented will allow users to book classrooms for up to 10 hours for multiple days using the same form as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
+The new features that are going to be implemented will allow users to book classrooms for up to 10 hours for multiple days using the same form as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
 
 The encapsulation of MarconiTT inside a containerized environment eliminates most of the difficulties that developers encounter when updating a software on production servers, since the code will reside inside an identical virtual environment on both the development and production machines.
 
