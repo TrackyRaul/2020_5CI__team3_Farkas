@@ -41,10 +41,9 @@
 
 ## Revision History
 
-| Version | Date     | Name            | Description      |   |
-|---------|----------|-----------------|------------------|---|
-| 1.0     | 01/05/20 | Samuele Pozzani | Initial document |   |
-|         |          |                 |                  |   |
+| Version | Date     | Name            | Description      |
+|---------|----------|-----------------|------------------|
+| 1.0     | 01/05/20 | Samuele Pozzani | Initial document |
 
 # 1 Introduction
 
