@@ -48,7 +48,7 @@
 # 1 Introduction
 
 ## 1.1 Overview
-MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached either from inside and outside the school network. The application allows for authorized teachers and managers to book classrooms and labs of the school. Team 3 is interested in updating MarconiTT, with three important changes and different minor fixes. 
+MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached either from inside and outside the school network. The application allows for authorized teachers, students and school staff to book classrooms and labs of the school. Team 3 is interested in updating MarconiTT, with three important changes and different minor fixes. 
 
 This document provides information on the requirements for MarconiTT application. Project goals, scope and definitions are given in the introduction. Design contraints and application environment are described in the following section. Non-functional requirements are outlined for later verification. Functional requirements are given to show the system features and expected user interaction.
 
