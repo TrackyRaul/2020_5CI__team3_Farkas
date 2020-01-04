@@ -1,6 +1,5 @@
 # **Software Project Management Plan**
 
-
 **Document owner:** Raul Farkas is responsible for developing and maintaining this document.  
 **Date:** January 05, 2020  
 **Version:** 1.0
@@ -11,6 +10,7 @@
   * [Revision History](#revision-history)
   
 - [1. Overview](#1-overview)
+  
   * [1.1 Purpose and scope](#11-purpose-and-scope)
   * [1.2 Goals and objectives](#12-goals-and-objectives)
     + [Project Goals](#project-goals)
@@ -69,7 +69,7 @@ The new features that are to be implemented will allow users to book classrooms 
 
 The encapsulation of MarconiTT inside a containerized environment eliminates most of the difficulties that developers encounter when updating a software on production servers, because the code will reside inside an identical virtual environment on both the development and production machines.
 
-Moving the webserver and the MarconiTT web application on edu-x08(server) is a fundamental step, because the Debian version currently installed on edu-x04 is too old and does not receive security patches any more. This displacement also allows for increased performances as edu-x08 is a virtual machine hosted on a more powerful server compared to the one where edu-x04 currently resides.
+Moving the webserver and the MarconiTT web application on edu-x08(server) is a fundamental step because the Debian version currently installed on edu-x04 is too old and does not receive security patches any more. This displacement also allows for increased performances as edu-x08 is a virtual machine hosted on a more powerful server compared to the one where edu-x04 currently resides.
 
 ## 1.2 Goals and objectives
 
@@ -84,7 +84,7 @@ The overall objective is to add new features that increase usability and to cont
 ### Project Objectives
 
 1. Update the booking form so that it allows users to book the same classroom for multiple hours on multiple days in consecutive weeks.
-2. Update the "Gestisci prenotazioni" by adding a calendar that allows users to filter previous bookings based on the selected date.
+2. Update the "Gestisci prenotazioni" section by adding a calendar that allows users to filter previous bookings based on the selected date.
 3. Create two containers that hold the Database and the Backend application using Docker and Docker-Compose
 4. Create a script that can be used to update the timetable on MarconiTT inside the containerized environment
 5. Move the database and the backend application inside the Docker containers
@@ -248,13 +248,13 @@ The following procedure is to be used when making changes to all baselined work 
 1. All project work products will be stored in a GIT repository on GitHub. The Database is also under VC on a separate repository.
 2. All documentation is also under VC on GitHub (https://github.com/TrackyRaul/2020_5CI_team3_Farkas)
 3. The change control procedure once a product is baselined is: 
-   1. Anyone wanting to make a change has to create a new branch that is based on the develop branch on GIT. Once the changes have been made, a pull request can be created to merge from the new feature branch onto the develop branch
+   1. Anyone wanting to make a change has to create a new branch that is based on the "develop" branch on GIT. Once the changes have been made, a pull request can be created to merge from the new feature branch onto the "develop" branch
    2. If the pull request is approved, the new changes will be included in the next production release on the "prod" branch
-   3. If the pull request is denied, a further discussion is needed in order to figure out how the suggested changes can be adapted or improved.
+   3. If the pull request is denied, further discussions are needed in order to figure out how the suggested changes can be adapted or improved.
 
 # 5. Product Acceptance Plan
 
-At the conclusion of each iteration, the product needs to be tested in an environment similar to the one used on the Production server. Because the application is encapsulated inside Docker containers, testing can be easily done on any machine that supports Docker as the underlying OS is the same inside the containers.  
+At the conclusion of each iteration, the product needs to be tested in an environment similar to the one used on the Production server. Because the application is encapsulated inside Docker containers, testing can be easily done on any machine that supports Docker, as the underlying OS is the same inside the containers.  
 
 
 
