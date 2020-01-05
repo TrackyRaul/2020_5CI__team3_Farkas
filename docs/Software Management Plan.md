@@ -130,7 +130,7 @@ The web application MarconiTT needs to be fully functional inside the containeri
 **Scenario** - one path through a use case  
 **Actor** - user or other software system that receives value from a use case  
 **Developer** - the person or organization developing the system, also sometimes called the supplier  
-**Stakeholder** - anyone interested in the project and its outcomes. This includes clients, customers, users, developers, testers, managers and executives  
+**Stakeholder** -  anyone with an interest in the project and its outcomes. This includes clients, customers, users, developers, testers, managers and executives  
 **Container** - a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another  
 **Booking** - a reservation of a classroom or a lab for one or more hours in a day  
 **Timetable** - a table that describes classrooms occupations for every hour  
