@@ -53,7 +53,7 @@ I.T.I. G. Marconi
 I.T.I. G. Marconi 
 
 ## Users
-I.T.I. G. Marconi Teachers and Secretaries 
+I.T.I. G. Marconi teachers and school staff
 
 ## Stakeholders and Expectations  
 **Team:** Implement new features, perform testing operations, report issues  
