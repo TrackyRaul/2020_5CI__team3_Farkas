@@ -61,7 +61,7 @@ I.T.I. G. Marconi teachers and school staff
 **I.T.I. G. Marconi:** Have an efficient web app to manage classroom bookings
 
 ## Purpose (Problem or opportunity addressed by the project) 
-In I.T.I. G. Marconi there is a web application called MarconiTT that provides a simple and intuitive interface used to manage classroom bookings. It allows users to visualize the events and the school situations (occupied classrooms, positions of students and professors) in specific days. Also, authorized users can book classrooms or insert events. This project aims to update MarconiTT. There will be three important changes: the addition of new features that facilitate the use of the application, the encapsulation of the web application inside a containerized environment and the displacement of the entire webserver, that contains MarconiTT and other applications, from edu-x04 to edu-x08, a more modern server. 
+At I.T.I. G. Marconi there is a web application called MarconiTT that provides a simple and intuitive interface used to manage classroom bookings. It allows users to visualize the events and the school situations (occupied classrooms, positions of students and professors) in specific days. Also, authorized users can book classrooms or insert events. This project aims to update MarconiTT. There will be three important changes: the addition of new features that facilitate the use of the application, the encapsulation of the web application inside a containerized environment and the displacement of the entire webserver, that contains MarconiTT and other applications, from edu-x04 to edu-x08, a more modern server. 
 
 ## Goals and Objectives 
 The overall objective is to add new features that increase usability and to containerize the entire application so that further developments are easier to implement on the production server.
@@ -69,7 +69,7 @@ The overall objective is to add new features that increase usability and to cont
 - Decrease the amount of time needed to update the application
 - Increase overall performance
 - Update the booking form so that it allows users to book the same classroom for multiple hours on multiple days of the week
-- Update the &quot;Gestisci prenotazioni&quot; by adding a calendar that allows users to filter previous bookings based on the selected date
+- Update the &quot;Gestisci prenotazioni&quot; section by adding a calendar that allows users to filter previous bookings based on the selected date
 - Create two containers that hold the Database and the Backend application using Docker and Docker-Compose
 - Create a script that can be used to update the timetable on MarconiTT inside the containerized environment
 - Move the database and the backend application inside the Docker containers
@@ -90,10 +90,10 @@ The overall objective is to add new features that increase usability and to cont
 There will be no costs because no hardware component will be bought. Also, as this is a school project, there are no salaries. 
 
 ## Project Priorities and degrees of freedom  
-The team has to respect the deadlines in order to keep up with the project and release the product. However, as this is a school project, dates can be flexible to give the team more time to analyze the obstacles encountered and learn new technologies. 
+The team has to respect the deadlines in order to keep up with the project and release the product. However, as this is a school project, dates can be flexible to give the team more time to analyze the obstacles encountered and learn to use new technologies. 
 
 ## Approach
-Scrum methodology has been involved in this project. So, an iterative and incremental approach has been adopted, with various iterations subdivided in tasks and daily team meetings to verify tasks' status and plan for new ones. 
+Scrum methodology will be used in this project. So, an iterative and incremental approach will be adopted, with various iterations subdivided in tasks and daily team meetings to verify tasks' status and plan for new ones. 
 
 ## Constraints
 In order to update the timetable on MarconiTT, an updated version of the timetable files needs to be provided. 
@@ -110,7 +110,7 @@ The web application MarconiTT needs to be fully functional inside the containeri
 At the minimum, the web application will be incapsulated inside a containerized environment and new features will be implemented. Time permitting, the scope could be extended to include the creation of a completely automated system to update the timetable.
 
 ## Risks and obstacles to success
-The team faces a lack of experience in implementing a professional project. In fact, the developers have to study new technologies and documenting a project from start to end. Also, some time will be spended in debugging and fixing issues. Thus, the project end date may be delayed. 
+The team is not experienced in finishing a professional project. In fact, the team members have to work with new technologies and write the complete software documentation. Some time will be spent in debugging and fixing issues. Thus, the project end date may be delayed. 
 
 ## Signatures  
  
