@@ -125,16 +125,16 @@ The web application MarconiTT needs to be fully functional inside the containeri
 **Project** - activities that will lead to the production of the new version of MarconiTT  
 **Client** - the organization for which this application is being built  
 **ITI G. Marconi** - a technical institute in Verona, the client of this application  
-**User** - the person or persons who will actually interact with MarconiTT  
+**User** - the person or the people who will actually interact with MarconiTT  
 **Use Case** - describes a goal-oriented interaction between the system and an actor. A use case may define several variants called scenarios that result in different paths through the use case and usually different outcomes  
-**Scenario** - one path through a user case  
-**Actor** - user or other software system that receives value from a user case  
+**Scenario** - one path through a use case  
+**Actor** - user or other software system that receives value from a use case  
 **Developer** - the person or organization developing the system, also sometimes called the supplier  
-**Stakeholder** - anyone with an interest in the project and its outcomes. This includes clients, customers, users, developers, testers, managers and executives  
+**Stakeholder** - anyone interested in the project and its outcomes. This includes clients, customers, users, developers, testers, managers and executives  
 **Container** - a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another  
 **Booking** - a reservation of a classroom or a lab for one or more hours in a day  
 **Timetable** - a table that describes classrooms occupations for every hour  
-**Backend** - parts of a computer application or a program's code that allow it to operate and that cannot be accessed by a user  
+**Backend** - parts of a computer application or a program's code that allow for it to operate and that cannot be accessed by a user  
 **Frontend** - all software or hardware that is part of a user interface. Human or digital users interact directly with various aspects of the front end of a program, including user-entered data, buttons, programs, websites and other features  
 **edu-x08** - the production server that runs Debian 11, docker and docker-compose
 
