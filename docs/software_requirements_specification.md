@@ -39,6 +39,8 @@
     - [4.3.2 Example](#432-example)
     - [4.3.3 Use Case 1](#433-use-case-1)
 
+<br/><br/><br/>
+
 ## Revision History
 
 | Version | Date     | Name            | Description      |
@@ -48,9 +50,9 @@
 # 1 Introduction
 
 ## 1.1 Overview
-MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached either from inside and outside the school network. The application allows for authorized teachers, students and staff members to book classrooms and labs of the school. Team 3 is interested in updating MarconiTT, with three important changes and different minor fixes. 
+MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached both from inside and outside the school network. The application allows for authorized teachers, students and staff members to book school classrooms and labs. Team 3 is interested in updating MarconiTT, with three important changes and different minor fixes. 
 
-This document provides information on the requirements for MarconiTT application. Project goals, scope and definitions are given in the introduction. Design contraints and application environment are described in the following section. Non-functional requirements are outlined for later verification. Functional requirements are given to show the system features and expected user interaction.
+This document provides information on the requirements for the MarconiTT application. Project goals, scope and definitions are given in the introduction. Design contraints and application environment are described in the following section. Non-functional requirements are outlined for later verification. Functional requirements are given to show the system features and expected user interaction.
 
 Project constraints will be included in separate documentation. The Software Project Management Plan will give specifics on project budget and schedule. A separate Test Plan document will address test specifications and procedures.
 
@@ -67,7 +69,7 @@ The overall objective is to add new features that increase usability and to cont
 ### 1.2.2 Project Objectives
 
 1. Update the booking form so that it allows users to book the same classroom for multiple hours on multiple days of the week
-2. Update the "Gestisci prenotazioni" by adding a calendar that allows users to filter previous bookings based on the selected date
+2. Update the "Gestisci prenotazioni" section by adding a calendar that allows users to filter previous bookings based on the selected date
 3. Create two containers that hold the Database and the Backend application using Docker and Docker-Compose
 4. Create a program that can be used to update the timetable on MarconiTT inside the containerized environment
 5. Move the database and the backend application inside the Docker containers
@@ -75,7 +77,7 @@ The overall objective is to add new features that increase usability and to cont
 
 ## 1.3 Scope
 
-The new features that are going to be implemented will allow users to book classrooms for up to 10 hours for multiple days using the same form as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
+The new features that are to be implemented will allow users to book classrooms for up to 10 hours for multiple days in consecutive weeks using the same form, as opposed to having to book for each day individually. Users will also be able to see previous bookings filtered by day thanks to a small calendar that will be implemented in the "Gestisci prenotazioni" section, as opposed to having all previous bookings in one list with no filters. The MarconiTT logo will be updated with a new one that will be created using the current I.T.I. G. Marconi logo.
 
 The encapsulation of MarconiTT inside a containerized environment eliminates most of the difficulties that developers encounter when updating a software on production servers, since the code will reside inside an identical virtual environment on both the development and production machines.
 
@@ -87,10 +89,10 @@ The encapsulation of MarconiTT inside a containerized environment eliminates mos
 **ITI G. Marconi** - a technical institute in Verona, the client of this application  
 **User** - the person or persons who will actually interact with MarconiTT  
 **Use Case** - describes a goal-oriented interaction between the system and an actor. A use case may define several variants called scenarios that result in different paths through the use case and usually different outcomes  
-**Scenario** - one path through a user case  
+**Scenario** - one path through a use case  
 **Actor** - user or other software system that receives value from a user case  
 **Developer** - the person or organization developing the system, also sometimes called the supplier  
-**Stakeholder** - anyone with an interest in the project and its outcomes. This includes clients, customers, users, developers, testers, managers and executives  
+**Stakeholder** - anyone interested in the project and its outcomes. This includes clients, customers, users, developers, testers, managers and executives  
 **Container** - a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another  
 **Booking** - a reservation of a classroom or a lab for one or more hours in a day  
 **Timetable** - a table that describes classrooms occupations for every hour  
