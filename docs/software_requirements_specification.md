@@ -104,7 +104,7 @@ The encapsulation of MarconiTT inside a containerized environment eliminates mos
 
 ## 2.1 Application Environment
 
-MarconiTT will be able to run on any OS that has docker and docker-compose installed. The use of multiple containers inside the Docker environment allows developers to develop the app locally and then move it on production servers with no friction. Working with containers orchestrated by docker-compose will also allow the for the database to be completely isolated in a way so that only the backend will have access to it.
+MarconiTT will be able to run on any OS that has docker and docker-compose installed. The use of multiple containers inside the Docker environment allows developers to develop the app locally and then move it on production servers with no friction. Working with containers orchestrated by docker-compose will also allow for the database to be completely isolated in a way so that only the backend will have access to it.
 
 ### 2.1.1 Development Environment
 
