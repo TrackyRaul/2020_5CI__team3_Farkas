@@ -4,30 +4,6 @@
 **Date:** January 05, 2020  
 **Version:** 1.0
 
-## Table Of Contents
-- [Project Charter](#project-charter)
-  - [Table Of Contents](#table-of-contents)
-  - [Project Title](#project-title)
-  - [Start Date](#start-date)
-  - [End Date](#end-date)
-  - [Project Manager](#project-manager)
-  - [Project Sponsor](#project-sponsor)
-  - [Customer](#customer)
-  - [Users](#users)
-  - [Stakeholders and Expectations](#stakeholders-and-expectations)
-  - [Purpose (Problem or opportunity addressed by the project)](#purpose-(problem-or-opportunity-addressed-by-the-project))
-  - [Goals and Objectives ](#goals-and-objectives)
-  - [Schedule Information (Major milestones and deliverables)](#schedule-information-(major-milestones-and-deliverables))
-  - [Financial Information (Cost estimate and budget information)](#financial-information-(Cost-estimate-and-budget-information))
-  - [Project Priorities and degrees of freedom](#project-priorities-and-degrees-of-freedom)
-  - [Approach](#approach)
-  - [Constraints](#constraints)
-  - [Assumptions](#assumptions)
-  - [Success Criteria](#success-criteria)
-  - [Scope](#scope)
-  - [Risks and obstacles to success](#risks-and-obstacles-to-success)
-  - [Signatures](#signatures)
-
 ## Revision History
 
 | Version | Date     | Name            | Description      |
