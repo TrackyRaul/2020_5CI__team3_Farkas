@@ -66,7 +66,7 @@ The overall objective is to add new features that increase usability and to cont
 
 ### 1.5.1 Schedule summary
 
-![](schedule_summary.PNG)
+![](images/schedule_summary.PNG)
 
 ## 1.6 Success Criteria
 
