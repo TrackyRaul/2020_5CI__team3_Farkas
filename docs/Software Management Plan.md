@@ -4,54 +4,6 @@
 **Date:** January 05, 2020  
 **Version:** 1.0
 
-## Table Of Contents
-- [**Software Project Management Plan**](#--software-project-management-plan--)
-  * [Table Of Contents](#table-of-contents)
-  * [Revision History](#revision-history)
-  
-- [1. Overview](#1-overview)
-  
-  * [1.1 Purpose and scope](#11-purpose-and-scope)
-  * [1.2 Goals and objectives](#12-goals-and-objectives)
-    + [Project Goals](#project-goals)
-    + [Project Objectives](#project-objectives)
-  * [1.3 Project Deliverables](#13-project-deliverables)
-  * [1.4 Assumptions and Constraints](#14-assumptions-and-constraints)
-    + [1.4.1 Assumptions](#141-assumptions)
-    + [1.4.2 Constraints](#142-constraints)
-  * [1.5 Schedule](#15-schedule)
-    + [1.5.1 Schedule summary](#151-schedule-summary)
-  * [1.6 Success Criteria](#16-success-criteria)
-  * [1.7 Definitions](#17-definitions)
-  
-- [2. Startup Plan](#2-startup-plan)
-  * [2.1 Team Organization](#21-team-organization)
-  * [2.2 Project Communications](#22-project-communications)
-  * [2.3 Technical Process](#23-technical-process)
-  * [2.4 Tools](#24-tools)
-  
-- [3. Work Plan](#3-work-plan)
-  * [3.1 Release Plan](#31-release-plan)
-    + [3.1.1 Plan by Feature](#311-plan-by-feature)
-      - [Iteration 1 #1 (29/03/2019 - 04/04/2019)](#iteration-1--1--29-03-2019---04-04-2019-)
-      - [Iteration 2 #2 (14/09/2019 - 11/10/2019)](#iteration-2--2--14-09-2019---11-10-2019-)
-      - [Iteration 3 #3 (14/10/2019 - 05/01/2020)](#iteration-3--3--14-10-2019---05-01-2020-)
-      - [Iteration 4 #4 (07/01/2019 - 13/01/2019)](#iteration-4--4--07-01-2019---13-01-2019-)
-    + [3.2 Iteration plans](#32-iteration-plans)
-      - [3.2.1 First iteration](#321-first-iteration)
-      - [3.2.2 Second iteration](#322-second-iteration)
-      - [3.2.3 Third iteration](#323-third-iteration)
-      - [3.2.4 Forth iteration](#324-forth-iteration)
-  
-- [4. Control Plan](#4-control-plan)
-  
-  * [4.2 Configuration Management Plan](#42-configuration-management-plan)
-  
-- [5. Product Acceptance Plan](#5-product-acceptance-plan)
-
-  
-
-
 ## Revision History
 
 | Version | Date     | Name            | Description      |
