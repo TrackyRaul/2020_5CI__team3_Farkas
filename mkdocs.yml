@@ -1,11 +1,11 @@
 site_name: 2020_5CI_Team3
 nav:
  
-    - 'Software Management Plan': 'software_management_plan.md'
     - 'Business Model Canvas': 'business_model_canvas.md'
     - 'Index': 'index.md'
     - 'Proj Charter': 'proj_charter.md'
     - 'Project Model Canvas': 'project_model_canvas.md'
+    - 'Software Management Plan': 'software_management_plan.md'
     - 'Software Requirements Specification': 'software_requirements_specification.md'
 
 
