@@ -130,7 +130,7 @@ An iterative and incremental development process is planned. Feedback will be us
 
 ### 3.1.1 Plan by Feature
 
-#### Iteration 1 #1 (29/03/2019 - 04/04/2019)
+#### Iteration 1 (29/03/2019 - 04/04/2019)
 
 **Summary**: Encapsulate MarconiTT inside Docker containers and add new Features
 
@@ -143,7 +143,7 @@ An iterative and incremental development process is planned. Feedback will be us
 
 
 
-#### Iteration 2 #2 (14/09/2019 - 11/10/2019)
+#### Iteration 2 (14/09/2019 - 11/10/2019)
 
 **Summary**: Create Python scripts that allows for automatic timetable update. Move Webserver and MarconiTT on edu-x08.
 
@@ -153,7 +153,7 @@ An iterative and incremental development process is planned. Feedback will be us
 | Move MarconiTT on edu-x08                             | 8                | 10            |
 | Move webserver with AD access API on edu-x08          | 3                | 3             |
 
-#### Iteration 3 #3 (14/10/2019 - 05/01/2020)
+#### Iteration 3 (14/10/2019 - 05/01/2020)
 
 **Summary**: Write software documentation. Add new API. Tweaks and bugfixes
 
@@ -163,7 +163,7 @@ An iterative and incremental development process is planned. Feedback will be us
 | Add ETL API                  | 2                | 2             |
 | Tweaks and bugfixes          | 15               | 18            |
 
-#### Iteration 4 #4 (07/01/2019 - 13/01/2019)
+#### Iteration 4 (07/01/2019 - 13/01/2019)
 
 **Summary**: Update software on production server. Check for minor bugs. Prepare for release
 
