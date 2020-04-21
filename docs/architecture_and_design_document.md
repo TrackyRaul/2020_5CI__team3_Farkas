@@ -16,6 +16,15 @@
   - [4.1 High Level Hierarchy](#41-high-level-hierarchy)
   - [4.2 Mid Level Design](#42-mid-level-design)
   - [4.3 Low Level Design](#43-low-level-design)
+- [5 Process View](#5-process-view)
+  - [5.1 Process View Description](#51-process-view-description)
+  - [5.2 Web server thread](#52-web-server-thread)
+  - [5.3 Docker thread](#53-docker-thread)
+- [6 Development View](#6-development-view)
+- [7 Use Case View](#7-use-case-view)
+  - [7.1 Docker Containerization](#71-docker-containerization)
+  - [7.2 Automatic Timetable Update](#72-automatic-timetable-update)
+  - [7.3 Multiple day booking](#73-multiple-day-booking)
 
 ## Revision History
 
@@ -78,3 +87,80 @@ The docker envirnoment contains three containers:
 ## 4.3 Low Level Design 
 
 IMMAGINE DI RAUL :D
+
+# 5 Process View
+
+## 5.1 Process View Description
+
+The Process View is essential in understanding how the separate components and subcomponents communicate with each other in a concurrent application. By better understanding the necessary paths of communication between the components, it may be possible to optimize the data flow and storage of the application, as well as ensuring thread-safety.
+
+## 5.2 Web server thread
+
+An Apache instance is always running separately from docker. The angular application in installed on the Apache webserver. Thus, then frontend works in an asyncronous way with the backend, which implements RESTful APIs.
+
+## 5.3 Docker thread
+
+Docker with his containers communicates with the external applications via RESTful APIs provided by NodeJS on the port 8090.
+
+# 6 Development View 
+
+The development environment is supposed to run locally, on every machine with docker and docker-compose. Docker will run 4 containers:  
+
+1. Database (mysql 5.7)
+2. Backend (NodeJS)
+3. Timetable updater (alpine 3.7 - Python)
+4. Frontend (AngularJS)
+
+__NB__: Frontend container is only needed in the development environment.  
+Check configuration files to fit system specifications:
+
+- docker_env/angular/app/app.js
+- docker_env/node_server/config_default.js
+- docker_env/carica_orario/scripts/orario_conf.json
+
+# 7 Use Case View
+
+## 7.1 Docker Containerization
+
+**Description: Application update on the production server**  
+
+1. Log in on the production server using SSH
+2. Obtain super user privileges using:
+   - `$ su`
+3. Stop docker-compose:  
+    - `$ docker-compose down`
+4. Copy the container folder with the new changes to the docker_env folder on the server
+5. Set pruduction configuration on:  
+    - docker_env/angular/app/app.js
+    - docker_env/node_server/config_default.js
+    - docker_env/carica_orario/scripts/orario_conf.json
+6. Run the following commands into the docker_env folder:
+   - `$ docker system prune -a`
+   - `$ docker-compose -f docker-compose-prod.yml build`
+   - `$ docker-compose -f docker-compose-prod.yml up -d`
+7. Disconnect from the pruduction server
+
+## 7.2 Automatic Timetable Update
+
+**Description: Timetable update**  
+
+1. Log in on the pruduction server using SFTP (CLI or Filezilla)
+2. Copy the updated files GPU001 and GPU004a to `/flussi_marconitt`
+3. Await until the updater starts (max 60 seconds)  
+  **What happens?** A python script in the Updater Container is always running and checks for new files.  
+  When it finds new files, the update process starts and override the database with the new timetable
+4. Disconnect from the production server
+
+## 7.3 Multiple day booking
+
+**Description: Book a classroom for multiple days**  
+
+1. Log in on MarconiTT using user credentials
+2. Select the day to create the booking
+3. Select the classroom and the repetition
+4. Select the hour
+5. Select for who is the booking
+6. Click on 'Conferma'  
+  **What happens?** The Angular application sends the request to the Node backend. Then node analyze the data and writes to the database.  
+  If the process goes well, then a successfull message is returned to the Angular app and visualized
+7. Disconnect from the application
