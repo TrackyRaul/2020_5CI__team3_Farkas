@@ -14,7 +14,7 @@
 
 MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached both from inside and outside the school network. The application allows for authorized teachers, students and staff members to book school classrooms and labs. This document will provide instructions on how to install the system requirements, a fresh copy of MarconiTT, how to do the initial configuration and add the initial timetable and how to change the timetable.
 
-## Processes
+## Procedures
 
 ### System requirements installation
 
@@ -44,7 +44,7 @@ Keep in mind that by installing docker-compose you also install Docker.
    #docker-compose version 1.23.1, build b02f1306
    ```
 
-### MarconiTT installation
+### MarconiTT installation and initial configuration
 
 #### Steps
 
@@ -71,6 +71,17 @@ Keep in mind that by installing docker-compose you also install Docker.
 
 5. Configure backend application. Open the backend configuration that can be found in "C:\Users\raulf\Desktop\Projects\x documentazione tt\MarconiTT\docker_env\node_server\config_default.js".
 
+   ```javascript
+   module.exports = {
+       'env': 'prod',
+       'webserver': 'edu-x04',
+       'db_host': 'db',
+       'db_user': 'root',
+       'db_password': "HIDDEN FOR SECURITY PURPOSES",
+       'db_name': "HIDDEN FOR SECURITY PURPOSES"
+   };
+   ```
+
    The "webserver" attribute should point to the webserver where the LDAP login script is located.
 
    Do not change in any way the fields regarding the DB configuration.
@@ -88,5 +99,23 @@ Keep in mind that by installing docker-compose you also install Docker.
    ```
 
 8. Provide the csv files containing "vacanze" and "periodo" information. This can be done by adding the "vacanze.csv" and the "periodo.csv" files in the "docker_env\carica_orario\scripts\" directory.
+
 9. Provide "flussi" files. This can be done by adding the "GPU001.txt" and  "GPU004a.txt" files in "docker_env\carica_orario\scripts\flussi"
+
+10. Start the docker containers. In the "docker_env" directory you can find "docker-compose-prod.yml", the configuration file for the docker containers. To start the containers execute:
+
+    ```bash
+    $ docker-compose -f docker-compose-prod.yml up
+    ```
+
+This should start the containers and initialization process thanks to the updater container.
+
+### Timetable change procedure("cambia orario")
+
+#### Steps
+
+1. Copy "GPU001.txt", "GPU004a.txt" inside "docker_env\carica_orario\scripts\flussi"
+2. The Updater will automatically sense that new files were added and the "cambia orario" procedure will start.
+
+CAREFUL!: during this procedure all the MarconiTT timetables will be erased. Until the "cambia orario" procedure is completed you won't be able to use any of the features provided by MarconiTT because changes you make to the bookings might not get saved.
 
