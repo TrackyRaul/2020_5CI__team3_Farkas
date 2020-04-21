@@ -16,10 +16,9 @@
 
 ## Revision History
 
-| Version | Date     | Name            | Description      |   |
-|---------|----------|-----------------|------------------|---|
-| 1.0     | 04/26/20 | Samuele Pozzani | Initial document |   |
-|         |          |                 |                  |   |
+| Version | Date     | Name            | Description      |
+|---------|----------|-----------------|------------------|
+| 1.0     | 04/26/20 | Samuele Pozzani | Initial document |
 
 # 1 Introduction
 
