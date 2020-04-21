@@ -20,9 +20,48 @@ MarconiTT is a web application available to desktop and mobile users and accessi
 
 Before cloning the MarconiTT repository on the server, it is required to install Docker, docker-compose, apache, git. The installation of Apache webserver and git is simple and intuitive, so this part of the documentation will focus only on the installation of Docker and docker-compose.
 
-#### Steps
+#### Install Docker Engine
 
-Keep in mind that by installing docker-compose you also install Docker.
+##### Steps
+
+1. Update repositories
+
+   ```bash
+   $ sudo apt-get update
+   
+   $ sudo apt-get install \
+       apt-transport-https \
+       ca-certificates \
+       curl \
+       gnupg-agent \
+       software-properties-common
+   ```
+
+2. Add Docker’s official GPG key:
+
+   ```bash
+   $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   ```
+
+3. Add the repository
+
+   ```bash
+   $ sudo add-apt-repository \
+      "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+      $(lsb_release -cs) \
+      stable"
+   ```
+
+4. Install the docker engine
+
+   ```bash
+    $ sudo apt-get update
+    $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+   ```
+
+#### Install docker-compose
+
+##### Steps
 
 1. Start by downloading the Docker Compose binary into the `/usr/local/bin` directory using the following [`curl`](https://linuxize.com/post/curl-command-examples/) command:
 
