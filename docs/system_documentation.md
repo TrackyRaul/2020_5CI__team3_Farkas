@@ -110,7 +110,7 @@ Server: edu-x08
 
    The HOST attribute should be configured to point to the node.js Express backend which can be found inside the docker containers. The PORT should remain 8090.
 
-4. Configure backend application. Open the backend configuration that can be found in "C:\Users\raulf\Desktop\Projects\x documentazione tt\MarconiTT\docker_env\node_server\config_default.js".
+4. Configure backend application. Open the backend configuration that can be found in "docker_env\node_server\config_default.js".
 
    ```javascript
    module.exports = {
@@ -201,7 +201,7 @@ Server: edu-x08
 
 4. Copy the angular frontend application inside the publishing directory of your webserver. If you are using Apache that directory is "/var/www/html/". Make sure you configure the virtual hosts appropriately based on your webserver configuration and structure.
 
-5. Configure backend application. Open the backend configuration that can be found in "C:\Users\raulf\Desktop\Projects\x documentazione tt\MarconiTT\docker_env\node_server\config_default.js".
+5. Configure backend application. Open the backend configuration that can be found in "docker_env\node_server\config_default.js".
 
    ```javascript
    module.exports = {
