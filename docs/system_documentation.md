@@ -20,9 +20,13 @@ MarconiTT is a web application available to desktop and mobile users and accessi
 
 Before cloning the MarconiTT repository on the server, it is required to install Docker, docker-compose, apache, git. The installation of Apache webserver and git is simple and intuitive, so this part of the documentation will focus only on the installation of Docker and docker-compose.
 
+System: Debian Linux server
+
+Server: edu-x08
+
 #### Install Docker Engine
 
-##### Steps
+**Steps**
 
 1. Update repositories
 
@@ -61,7 +65,7 @@ Before cloning the MarconiTT repository on the server, it is required to install
 
 #### Install docker-compose
 
-##### Steps
+**Steps**
 
 1. Start by downloading the Docker Compose binary into the `/usr/local/bin` directory using the following [`curl`](https://linuxize.com/post/curl-command-examples/) command:
 
@@ -83,9 +87,98 @@ Before cloning the MarconiTT repository on the server, it is required to install
    #docker-compose version 1.23.1, build b02f1306
    ```
 
-### MarconiTT installation and initial configuration
+### Development - MarconiTT installation and initial configuration
 
-#### Steps
+**Steps**
+
+1. Clone the repository https://github.com/TrackyRaul/MarconiTT.git in a chosen directory on the server.
+
+2. Checkout to the "develop" where the production version of MarconiTT can be found.
+
+   ```
+   $ git checkout develop
+   ```
+
+3. Configure frontend application. Open the frontend configuration that can be found in "docker_env\angular\app\app.js".
+
+   ```javascript
+   app.constant("CONFIG", {
+       'HOST' : 'localhost',
+       'PORT': '8090'
+   });
+   ```
+
+   The HOST attribute should be configured to point to the node.js Express backend which can be found inside the docker containers. The PORT should remain 8090.
+
+4. Configure backend application. Open the backend configuration that can be found in "C:\Users\raulf\Desktop\Projects\x documentazione tt\MarconiTT\docker_env\node_server\config_default.js".
+
+   ```javascript
+   module.exports = {
+       'env': 'dev',
+       'webserver': 'IRRELEVANT IN DEVELOPMENT MODE',
+       'db_host': 'db',
+       'db_user': 'root',
+       'db_password': "HIDDEN FOR SECURITY PURPOSES",
+       'db_name': "HIDDEN FOR SECURITY PURPOSES"
+   };
+   ```
+
+5. Provide the json files containing "aule" information. This can be simply done by adding the "aule.json" file in "docker_env\carica_orario\scripts\aule.json"
+
+   The "aule.json" file should look like this.
+
+   ```json
+   {"classes":["1AI","1BI"....]}
+   ```
+
+6. Provide the csv files containing "vacanze" and "periodo" information. This can be done by adding the "vacanze.csv" and the "periodo.csv" files in the "docker_env\carica_orario\scripts\" directory.
+
+7. Provide "flussi" files. This can be done by adding the "GPU001.txt" and  "GPU004a.txt" files in "docker_env\carica_orario\scripts\flussi"
+
+8. Start the docker containers. In the "docker_env" directory you can find "docker-compose.yml", the configuration file for the docker containers. To start the containers execute:
+
+   ```bash
+   $ docker-compose up
+   ```
+
+
+9.  Once the creation of the database container is completed go in the directory "docker_env\carica_orario\scripts" and execute:
+
+   ```bash
+   $ docker exec -i docker_env_db_1 mysql -uroot -p"root2014" < dump.sql
+   ```
+
+10. Move to the "docker_env" directory and execute:
+
+    ```bash
+    $ docker-compose down
+    ```
+
+    This will turn off all the docker containers
+
+11. Initial configuration of the DB through the updater container and script. Open the Updater configuration file that can be found in "docker_env\carica_orario\scripts\orario_conf.json\"
+
+    Make sure that the "first_time" attribute is set to 1 and that the "files_to_check" are set to ["GPU001.txt", "GPU004a.txt"].
+
+12. Start the docker containers. In the "docker_env" directory you can find "docker-compose.yml", the configuration file for the docker containers. To start the containers execute:
+
+    ```bash
+    $ docker-compose up
+    ```
+
+    This should start the containers and initialization process thanks to the updater container.
+
+13. Once the updater process is completed and the "updater" container prints "Finished first time" on the terminal. Go in the directory "docker_env\carica_orario\scripts" and execute:
+
+    ```bash
+    $ docker exec -i docker_env_db_1 mysql -uroot -p"root2014" < carica_utenti.sql
+    ```
+
+    This will upload all the users that can login.
+
+### Production - MarconiTT installation and initial configuration
+
+**Steps**
 
 1. Clone the repository https://github.com/TrackyRaul/MarconiTT.git in a chosen directory on the server.
 
@@ -125,10 +218,6 @@ Before cloning the MarconiTT repository on the server, it is required to install
 
    Do not change in any way the fields regarding the DB configuration.
 
-6. Initial configuration of the DB through the updater container and script. Open the Updater configuration file that can be found in "docker_env\carica_orario\scripts\orario_conf.json\"
-
-   Make sure that the "first_time" attribute is set to 1 and that the "files_to_check" are set to ["GPU001.txt", "GPU004a.txt"].
-
 7. Provide the json files containing "aule" information. This can be simply done by adding the "aule.json" file in "docker_env\carica_orario\scripts\aule.json"
 
    The "aule.json" file should look like this.
@@ -144,14 +233,46 @@ Before cloning the MarconiTT repository on the server, it is required to install
 10. Start the docker containers. In the "docker_env" directory you can find "docker-compose-prod.yml", the configuration file for the docker containers. To start the containers execute:
 
     ```bash
+    $ docker-compose -f docker-compose-prod.yml
+    ```
+
+9.  Once the creation of the database container is completed go in the directory "docker_env\carica_orario\scripts" and execute:
+
+   ```bash
+   $ docker exec -i docker_env_db_1 mysql -uroot -p"root2014" < dump.sql
+   ```
+
+10. Move to the "docker_env" directory and execute:
+
+    ```bash
+    $ docker-compose down
+    ```
+
+    This will turn off all the docker containers
+
+11. Initial configuration of the DB through the updater container and script. Open the Updater configuration file that can be found in "docker_env\carica_orario\scripts\orario_conf.json\"
+
+    Make sure that the "first_time" attribute is set to 1 and that the "files_to_check" are set to ["GPU001.txt", "GPU004a.txt"].
+
+12. Start the docker containers. In the "docker_env" directory you can find "docker-compose.yml", the configuration file for the docker containers. To start the containers execute:
+
+    ```bash
     $ docker-compose -f docker-compose-prod.yml up
     ```
 
-This should start the containers and initialization process thanks to the updater container.
+    This should start the containers and initialization process thanks to the updater container.
 
-### Timetable change procedure("cambia orario")
+13. Once the updater process is completed and the "updater" container prints "Finished first time" on the terminal. Go in the directory "docker_env\carica_orario\scripts" and execute:
 
-#### Steps
+    ```bash
+    $ docker exec -i docker_env_db_1 mysql -uroot -p"root2014" < carica_utenti.sql
+    ```
+
+    This will upload all the users that can login.
+
+### Development and Production - Timetable change procedure("cambia orario")
+
+**Steps**
 
 1. Copy "GPU001.txt", "GPU004a.txt" inside "docker_env\carica_orario\scripts\flussi"
 2. The Updater will automatically sense that new files were added and the "cambia orario" procedure will start.
