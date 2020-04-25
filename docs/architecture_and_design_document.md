@@ -77,7 +77,7 @@ The architecture system for the MarconiTT application is an n-tier architecture.
 
 ## 4.2 Mid Level Design
 
-<img src="images/mid_leve_view.png"><br>
+<img src="images/mid_level_view.png"><br>
 
 The docker envirnoment contains three containers:
 1. Database (mysql 5.7)
@@ -86,7 +86,7 @@ The docker envirnoment contains three containers:
 
 ## 4.3 Low Level Design 
 
-IMMAGINE DI RAUL :D
+<img src="images/low_level_view.jpeg">
 
 # 5 Process View
 
