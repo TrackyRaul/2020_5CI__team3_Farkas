@@ -271,7 +271,7 @@ Server: edu-x08
 
     This will upload all the users that can login.
 
-### 2.3 Development and Production - Timetable change procedure("cambia orario")
+### 2.4 Development and Production - Timetable change procedure("cambia orario")
 
 **Steps**
 
