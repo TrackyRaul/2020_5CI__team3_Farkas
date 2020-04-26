@@ -11,6 +11,8 @@ nav:
     - 'Architecture and Design': 'architecture_and_design.md'
     - 'Test Case Specification': 'test_case_specification.md'
     - 'Coding Standards': 'coding_standards.md'
+    - 'User guide': 'user_guide.md'
+    - 'Test plan': 'test_plan.md'
 
 theme:
     name: readthedocs
