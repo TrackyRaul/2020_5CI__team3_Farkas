@@ -70,7 +70,7 @@ Testers will perform testings of the whole system both from the user side and th
 
 ### 3.3 Test Goals
 
-The goals of this testing are ensuring that everything works perfectly, especially the added features. Testers will also try to find bugs and discover errors that may cause system failures, that will eventually need to be corrected in order to deliver an application without errors.
+The goals of these testings are to ensure that everything works perfectly, especially the added features. Testers will also try to find bugs and discover errors that may cause system failures, that will eventually need to be corrected in order to deliver an application without errors.
 
 ## 4 Test Deliverables
 
