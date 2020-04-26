@@ -7,7 +7,7 @@ nav:
     - 'Software Requirements Specification': 'software_requirements_specification.md'
     - 'Software Management Plan': 'software_management_plan.md'
     - 'Release Plan': 'release_plan.md'
-    - 'Iteration Plan': ''
+    - 'Iteration Plan': 'iteration_plan.md'
     - 'Memo of Understanding': 'memo_of_understanding.md'
     - 'Project Success Criteria': 'project_success_criteria.md'
     - 'Architecture and Design': 'architecture_and_design.md'
