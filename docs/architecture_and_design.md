@@ -1,4 +1,4 @@
-# Architecture and Design Document
+# Architecture and Design
 
 **Document owner:** Samuele Pozzani is responsible for developing and maintaining this document.  
 **Date:** April 26, 2020  
