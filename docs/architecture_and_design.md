@@ -49,13 +49,13 @@ In this section the modules of the system are first expressed in terms of high l
 
 ## 4.1 High Level Hierarchy
 
-![High Level View](./images/high_level_view.png)<br>
+![High Level View](images/high_level_view.png)<br>
 
 The architecture system for the MarconiTT application is an n-tier architecture. This architecture system is designed to allow for proper information hiding, modular components, and single system dependencies. The abstraction of the presentation layer, and consequently the User Interface (UI), allow for a flexible pipeline for the optimization of the UI to meet customer needs and expectations. There are multiple layers between the Presentation Layer and the lowest level, but they are all coded in one single monolitich file to simplify the structure. The Database layer is the lowest level in the hierarchy.
 
 ## 4.2 Mid Level Design
 
-![Mid Level View](./images/mid_level_view.png)<br>
+![Mid Level View](images/mid_level_view.png)<br>
 
 The docker envirnoment contains three containers:
 1. Database (mysql 5.7)
@@ -64,7 +64,7 @@ The docker envirnoment contains three containers:
 
 ## 4.3 Low Level Design 
 
-![Low Level View](./images/low_level_view.jpeg)<br>
+![Low Level View](images/low_level_view.jpeg)<br>
 
 # 5 Process View
 
