@@ -12,7 +12,7 @@
 
 # 1 Introduction
 
-This document describes the architecture and design for the MarconiTT application being developed for ITI G. Marconi.
+This document describes the architecture and design for the MarconiTT application developed for ITI G. Marconi.
 
 The purpose of this document is to describe the architecture and design of the MarconiTT application in a way that addresses the interests and concerns of all major stakeholders. For this application the major stakeholders are:
 
@@ -21,7 +21,7 @@ The purpose of this document is to describe the architecture and design of the M
 - Project Manager – the project manager is responsible for assigning tasks and coordinating development work. He or she wants an architecture that divides the system into components of roughly equal size and complexity that can be developed simultaneously with minimal dependencies. For this to happen, the modules need well-defined interfaces. Also, because most individuals specialize in a particular skill or technology, modules should be designed around specific expertise. For example, all UI logic might be encapsulated in one module. Another might have all business logic.
 - Maintenance Programmers – they want assurance that the system will be easy to evolve and maintain on into the future.
 
-The architecture and design for a software system is complex and individual stakeholders often have specialized interests. There is no one diagram or model that can easily express a system’s architecture and design. For this reason, software architecture and design is often presented in terms of multiple views or perspectives [IEEE Std. 1471]. Here the architecture of the MarconiTT application is described from 4 different perspectives [1995 Krutchen]:
+The architecture and design of a software system is complex and individual stakeholders often have specialized interests. There is no one diagram or model that can easily express a system’s architecture and design. For this reason, software architecture and design is often presented in terms of multiple views or perspectives [IEEE Std. 1471]. Here the architecture of the MarconiTT application is described from 4 different perspectives [1995 Krutchen]:
 
 1. Logical View – major components, their attributes and operations. This view also includes relationships between components and their interactions. When doing OO design, class diagrams and sequence diagrams are often used to express the logical view.
 2. Process View – the threads of control and processes used to execute the operations identified in the logical view.
@@ -33,8 +33,11 @@ The architecture and design for a software system is complex and individual stak
 There is no absolute measure for distinguishing between good and bad design. The value of a design depends on stakeholder priorities. For example, depending on the circumstances, an efficient design might be better than a maintainable one, or vise versa. Therefore, before presenting a design it is good practice to state the design priorities. The design that is offered will be judged according to how well it satisfies the stated priorities.
 
 The design priorities for the MarconiTT application are:
+
 - Minimize complexity and development effort.
+
 - Decrease the amount of time needed to update the application.
+
 - Increase overall performance.
 
 # 3 System Behaviour
