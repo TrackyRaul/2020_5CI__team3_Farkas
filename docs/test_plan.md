@@ -89,7 +89,7 @@ At the conclusion of each iteration, the product needs to be tested in an enviro
 
 Human resources: 
 
-Farkas Raul
+​      			                Farkas Raul
 
 ​      			                Moretto Pietro
 
