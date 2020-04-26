@@ -4,43 +4,6 @@
 **Date:** January 05, 2020  
 **Version:** 1.0
 
-## Table Of Contents
-- [Software Requirements Specification](#software-requirements-specification)
-  - [Table Of Contents](#table-of-contents)
-  - [Revision History](#revision-history)
-- [1 Introduction](#1-introduction)
-  - [1.1 Overview](#11-overview)
-  - [1.2 Goals and Objectives](#12-goals-and-objectives)
-    - [1.2.1 Project Goals](#121-project-goals)
-    - [1.2.2 Project Objectives](#122-project-objectives)
-  - [1.3 Scope](#13-scope)
-  - [1.4 Definitions](#14-definitions)
-- [2 General Design Constraints](#2-general-design-constraints)
-  - [2.1 Application Environment](#21-application-environment)
-    - [2.1.1 Development Environment](#211-development-environment)
-    - [2.1.2 Production Environment](#212-production-environment)
-  - [2.2 User Characteristics](#22-user-characteristics)
-  - [2.3 Mandated Constraints](#23-mandated-constraints)
-- [3 Non-functional Requirements](#3-non-functional-requirements)
-  - [3.1 Operational Requirements](#31-operational-requirements)
-  - [3.2 Performance Requirements](#32-performance-requirements)
-  - [3.3 Security Requirements](#33-security-requirements)
-  - [3.4 Documentation and Training](#34-documentation-and-training)
-  - [3.5 External Interface](#35-external-interface)
-- [4 Functional Requirements](#4-functional-requirements)
-  - [4.1 Feature: Docker Containerization](#41-feature-docker-containerization)
-    - [4.1.1 Description](#411-description)
-    - [4.1.2 Use Case 1](#412-use-case-1)
-  - [4.2 Feature: Automatic Timetable Update](#42-feature-automatic-timetable-update)
-    - [4.2.1 Description](#421-description)
-    - [4.2.2 Use Case 1](#422-use-case-1)
-  - [4.3 Feature: Multiple day booking](#43-feature-multiple-day-booking)
-    - [4.3.1 Description](#431-description)
-    - [4.3.2 Example](#432-example)
-    - [4.3.3 Use Case 1](#433-use-case-1)
-
-<br/><br/><br/>
-
 ## Revision History
 
 | Version | Date     | Name            | Description      |
