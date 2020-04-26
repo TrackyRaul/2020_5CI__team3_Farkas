@@ -20,7 +20,7 @@ MarconiTT is a web application available to desktop and mobile users and accessi
 
 Go to [apps.marconivr.it](), that is the home page of the webserver, and click on the "AuleTT" tile.
 
-![1](images/1.png)
+![1](images/1.PNG)
 
 Now you'll be able to see the main page of MarconiTT. The left side shows a login form, which means that initially you're not logged in. You can log in only if you are an authorized teacher, student or staff member, and without logging in you'll be able only to view booked classrooms.
 
