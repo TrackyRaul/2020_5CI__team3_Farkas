@@ -4,28 +4,6 @@
 **Date:** April 26, 2020  
 **Version:** 1.0
 
-## Table of Contents
-
-- [Architecture and Design Document](#architecture-and-design-document)
-  - [Table of Contents](#table-of-contents)
-  - [Revision History](#revision-history)
-- [1 Introduction](#1-introduction)
-- [2 Design Goals](#2-design-goals)
-- [3 System Behaviour](#3-system-behaviour)
-- [4 Logical View](#4-logical-view)
-  - [4.1 High Level Hierarchy](#41-high-level-hierarchy)
-  - [4.2 Mid Level Design](#42-mid-level-design)
-  - [4.3 Low Level Design](#43-low-level-design)
-- [5 Process View](#5-process-view)
-  - [5.1 Process View Description](#51-process-view-description)
-  - [5.2 Web server thread](#52-web-server-thread)
-  - [5.3 Docker thread](#53-docker-thread)
-- [6 Development View](#6-development-view)
-- [7 Use Case View](#7-use-case-view)
-  - [7.1 Docker Containerization](#71-docker-containerization)
-  - [7.2 Automatic Timetable Update](#72-automatic-timetable-update)
-  - [7.3 Multiple day booking](#73-multiple-day-booking)
-
 ## Revision History
 
 | Version | Date     | Name            | Description      |

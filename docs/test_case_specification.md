@@ -4,16 +4,6 @@
 **Date:** April 26, 2020  
 **Version:** 1.0
 
-## Table of Contents
-
-- [Test Case Specification](#test-case-specification)
-  - [Table of Contents](#table-of-contents)
-  - [Revision History](#revision-history)
-- [1 Introduction](#1-introduction)
-- [2 Test Cases: Containers management](#2-test-cases-containers-management)
-- [3 Test Cases: Timetable update](#3-test-cases-timetable-update)
-- [4 Test Cases: Multiple day booking](#4-test-cases-multiple-day-booking)
-
 ## Revision History
 
 | Version | Date     | Name            | Description      |

@@ -4,15 +4,6 @@
 **Date:** April 26, 2020  
 **Version:** 1.0
 
-## Table of Contents
-
-- [Coding Standards](#coding-standards)
-  - [Table of Contents](#table-of-contents)
-  - [Revision History](#revision-history)
-- [1 Introduction](#1-introduction)
-- [2 Python source files](#2-python-source-files)
-- [3 JavaScript source files](#3-javascript-source-files)
-
 ## Revision History
 
 | Version | Date     | Name            | Description      |
