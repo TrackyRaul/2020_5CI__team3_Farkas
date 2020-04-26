@@ -1,4 +1,4 @@
-# **Software Project Management Plan**
+# Software Project Management Plan
 
 **Document owner:** Raul Farkas is responsible for developing and maintaining this document.  
 **Date:** January 05, 2020  
