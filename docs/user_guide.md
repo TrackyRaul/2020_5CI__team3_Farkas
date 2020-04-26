@@ -10,13 +10,13 @@
 | ------- | ---------- | -----------  | ---------------- |
 | 1.0     | 25/04/2020 | Mateo Picari | Initial document |
 
-## Introduction
+## 1 Introduction
 
 MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached both from inside and outside the school network. The application allows for authorized teachers, students and staff members to book school classrooms and labs. This document will provide instructions on how to view if classrooms or labs are booked or not, how to book them and how to view or insert events.
 
-## Main scenarios of use
+## 2 Main scenarios of use
 
-### Visiting MarconiTT
+### 2.1 Visiting MarconiTT
 
 Go to [apps.marconivr.it](), that is the home page of the webserver, and click on the "AuleTT" tile.
 
@@ -26,13 +26,13 @@ Now you'll be able to see the main page of MarconiTT. The left side shows a logi
 
 ![1](images/2.jpeg)
 
-### Viewing bookings
+### 2.2 Viewing bookings
 
 To view the bookings, you need to click on a specific day that you want to explore. After doing that, you will be able to see for each classroom if it's been booked, if it's already occupied by another class because of the regular school hours or if it's available. There are also 3 filters that allow you to switch from classrooms to labs, to select a specific classroom or lab (you will view only one row) and to select only a period (the number of columns will change based on the number of selected hours, that can be more than one).
 
 ![1](images/3.jpeg)
 
-### Booking classrooms or labs
+### 2.3 Booking classrooms or labs
 
 If you're allowed, you can login in order to book a classroom or insert an event. The following screen will show up. As you can see, now there are multiple options in the left side, and the default option "Prenotazioni" is the one that allows you to book classrooms.
 
@@ -48,7 +48,7 @@ Now your booking has been successfully completed and everybody will be able to s
 
 ![1](images/7.jpeg)
 
-### Viewing bookings and events
+### 2.4 Viewing bookings and events
 
 When you are in the "Visualizza" section, after you clicked on a chosen day, you will be able to see the bookings of a specific class, teacher or classroom by setting the filters.
 
@@ -58,19 +58,19 @@ You can also see the events planned for that day.
 
 ![1](images/9.jpeg)
 
-### Inserting events
+### 2.5 Inserting events
 
 Now let's see how to insert an event. In the "Inserisci evento" section, you have to describe the event you are going to insert, then you have to set the date, the start time, the end time, the classes that are going to attend that event and the classroom where the event will take place (This is usually used only by the school staff).
 
 ![1](images/10.jpeg)
 
-### Freeing up resources
+### 2.6 Freeing up resources
 
 The "libera risorse" section is used to free up classrooms or labs when classes go on school trips. The school staff has to insert the start date, the end date, the hours that are being set as available and the class that is going on a trip (This is usually used only by the school staff).
 
 ![1](images/11.jpeg)
 
-### Managing bookings and events
+### 2.7 Managing bookings and events
 
 The "Gestisci prenotazioni" section shows a complete overview of classrooms and labs bookings. Here it's also possible to filter bookings by day, to see the old ones and to quickly delete bookings (This is usually used only by the school staff).
 
