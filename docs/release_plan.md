@@ -1,6 +1,6 @@
 # Release Plan
 
-**Document owner:** Raul Farkas is responsible for developing and maintaining this document. 
+**Document owner:** Raul Farkas is responsible for developing and maintaining this document.  
 **Date:** April 21, 2020  
 **Version:** 1.0
 
@@ -14,7 +14,7 @@
 
 ### 1.1 Iteration 1 (29/03/2019 - 04/04/2019)
 
-**Objective**: Encapsulate MarconiTT inside Docker containers and add new Features
+**Objective**: Encapsulate MarconiTT inside Docker containers and add new features
 
 | Feature / Deliverables                         | Estimated Effort | Actual Effort |
 | ---------------------------------------------- | ---------------- | ------------- |
