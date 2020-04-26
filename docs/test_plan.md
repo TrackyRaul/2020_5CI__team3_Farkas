@@ -1,7 +1,6 @@
 # Test Plan
 
-**Document owner:** Mateo Picari is responsible for developing and maintaining this document. 
-
+**Document owner:** Mateo Picari is responsible for developing and maintaining this document.  
 **Date:** April 26, 2020  
 **Version:** 1.0
 
