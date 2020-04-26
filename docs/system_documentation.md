@@ -34,7 +34,6 @@ Server: edu-x08
 
    ```bash
    $ sudo apt-get update
-   
    $ sudo apt-get install \
        apt-transport-https \
        ca-certificates \
