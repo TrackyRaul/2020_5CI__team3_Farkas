@@ -87,9 +87,14 @@ At the conclusion of each iteration, the product needs to be tested in an enviro
 
 ## 7 Required Resources
 
-Human resources: Farkas Raul
+Human resources: 
+
+Farkas Raul
+
 ​      			                Moretto Pietro
+
 ​       			               Picari Mateo 
+
 ​      			                Pozzani Samuele 
 
 Material: Python, HTML, CSS, JSON, YAML, Angular JS, Express(Node), MySql, Docker and Docker-Compose for development, Visual Studio Code as the development tool, Linux as the operating system, GIT repository for the version control, Markdown(.md) for documentation.
