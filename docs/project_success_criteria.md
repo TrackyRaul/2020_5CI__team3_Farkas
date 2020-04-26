@@ -1,6 +1,6 @@
 # Project Success Criteria
 
-**Document owner:** Pietro Moretto is responsible for developing and maintaining this document. 
+**Document owner:** Pietro Moretto is responsible for developing and maintaining this document.  
 **Date:** April 22, 2020  
 **Version:** 1.0
 
