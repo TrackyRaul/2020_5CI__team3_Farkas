@@ -1,7 +1,7 @@
 # System Documentation
 
-**Document owner:** Raul Farkas is responsible for developing and maintaining this document. 
-**Date:** April 21, 2020  
+**Document owner:** Raul Farkas is responsible for developing and maintaining this document.  
+**Date:** April 21, 2020   
 **Version:** 1.0
 
 ## Revision History
@@ -10,13 +10,13 @@
 | ------- | ---------- | ----------- | ---------------- |
 | 1.0     | 21/04/2020 | Raul Farkas | Initial document |
 
-## Introduction
+## 1 Introduction
 
 MarconiTT is a web application available to desktop and mobile users and accessible through a browser. It can be reached both from inside and outside the school network. The application allows for authorized teachers, students and staff members to book school classrooms and labs. This document will provide instructions on how to install the system requirements, a fresh copy of MarconiTT, how to do the initial configuration and how to change the timetable.
 
-## Procedures
+## 2 Procedures
 
-### System requirements installation
+### 2.1 System requirements installation
 
 Before cloning the MarconiTT repository on the server, it is required to install Docker, docker-compose, apache and git. The installation of Apache webserver and git is simple and intuitive, so this part of the documentation will focus only on the installation of Docker and docker-compose.
 
@@ -24,7 +24,7 @@ System: Debian Linux server
 
 Server: edu-x08
 
-#### Install Docker Engine
+#### 2.1.1 Install Docker Engine
 
 **Steps**
 
@@ -32,7 +32,6 @@ Server: edu-x08
 
    ```bash
    $ sudo apt-get update
-   
    $ sudo apt-get install \
        apt-transport-https \
        ca-certificates \
@@ -63,7 +62,7 @@ Server: edu-x08
     $ sudo apt-get install docker-ce docker-ce-cli containerd.io
    ```
 
-#### Install docker-compose
+#### 2.1.2 Install docker-compose
 
 **Steps**
 
@@ -87,7 +86,7 @@ Server: edu-x08
    #docker-compose version 1.23.1, build b02f1306
    ```
 
-### Development - MarconiTT installation and initial configuration
+### 2.2 Development - MarconiTT installation and initial configuration
 
 **Steps**
 
@@ -176,7 +175,7 @@ Server: edu-x08
 
     This will upload all the users that can login.
 
-### Production - MarconiTT installation and initial configuration
+### 2.3 Production - MarconiTT installation and initial configuration
 
 **Steps**
 
@@ -270,7 +269,7 @@ Server: edu-x08
 
     This will upload all the users that can login.
 
-### Development and Production - Timetable change procedure("cambia orario")
+### 2.4 Development and Production - Timetable change procedure("cambia orario")
 
 **Steps**
 

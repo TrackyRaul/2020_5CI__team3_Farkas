@@ -1,6 +1,6 @@
 # Release Plan
 
-**Document owner:** Raul Farkas is responsible for developing and maintaining this document. 
+**Document owner:** Raul Farkas is responsible for developing and maintaining this document.  
 **Date:** April 21, 2020  
 **Version:** 1.0
 
@@ -10,11 +10,11 @@
 | ------- | ---------- | ----------- | ---------------- |
 | 1.0     | 21/04/2020 | Raul Farkas | Initial document |
 
-## Iterations
+## 1 Iterations
 
-#### Iteration 1 (29/03/2019 - 04/04/2019)
+### 1.1 Iteration 1 (29/03/2019 - 04/04/2019)
 
-**Objective**: Encapsulate MarconiTT inside Docker containers and add new Features
+**Objective**: Encapsulate MarconiTT inside Docker containers and add new features
 
 | Feature / Deliverables                         | Estimated Effort | Actual Effort |
 | ---------------------------------------------- | ---------------- | ------------- |
@@ -25,7 +25,7 @@
 
 
 
-#### Iteration 2 (14/09/2019 - 11/10/2019)
+### 1.2 Iteration 2 (14/09/2019 - 11/10/2019)
 
 **Objective**: Create Python scripts that allows for automatic timetable update. Move Webserver and MarconiTT on edu-x08.
 
@@ -35,7 +35,7 @@
 | Move MarconiTT on edu-x08                             | 8                | 10            |
 | Move webserver with AD access API on edu-x08          | 3                | 3             |
 
-#### Iteration 3 (14/10/2019 - 05/01/2020)
+### 1.3 Iteration 3 (14/10/2019 - 05/01/2020)
 
 **Objective**: Write software documentation. Add new API. Tweaks and bugfixes
 
@@ -45,7 +45,7 @@
 | Add ETL API                  | 2                | 2             |
 | Tweaks and bugfixes          | 15               | 18            |
 
-#### Iteration 4 (07/01/2019 - )
+### 1.4 Iteration 4 (07/01/2019 - )
 
 **Objective**: Update software on production server. Check for minor bugs. Prepare for release
 
