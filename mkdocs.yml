@@ -17,6 +17,22 @@ nav:
     - 'Test Case Specification': 'test_case_specification.md'
     - 'System Documentation': 'system_documentation.md'
 
+    - 'Project Model Canvas': 'pdf/project_model_canvas.pdf'
+    - 'Business Model Canvas': 'pdf/business_model_canvas.pdf'
+    - 'Project Charter': 'pdf/proj_charter.pdf'
+    - 'Software Requirements Specification': 'pdf/software_requirements_specification.pdf'
+    - 'Software Management Plan': 'pdf/software_management_plan.pdf'
+    - 'Release Plan': 'pdf/release_plan.pdf'
+    - 'Iteration Plan': 'pdf/iteration_plan.pdf'
+    - 'Memo of Understanding': 'pdf/memo_of_understanding.pdf'
+    - 'Project Success Criteria': 'pdf/project_success_criteria.pdf'
+    - 'Architecture and Design': 'pdf/architecture_and_design.pdf'
+    - 'Coding Standards': 'pdf/coding_standards.pdf'
+    - 'Test plan': 'pdf/test_plan.pdf'
+    - 'User guide': 'pdf/user_guide.pdf'
+    - 'Test Case Specification': 'pdf/test_case_specification.pdf'
+    - 'System Documentation': 'pdf/system_documentation.pdf'
+
 theme:
     name: readthedocs
 
